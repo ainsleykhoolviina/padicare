@@ -56,7 +56,6 @@ gcloud run deploy "$SERVICE_NAME" \
   --allow-unauthenticated \
   --port 8080 \
   --set-env-vars "NODE_ENV=production" \
-  --set-env-vars "PORT=8080" \
   --set-env-vars "SESSION_SECRET=$SESSION_SECRET" \
   --set-env-vars "FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID" \
   --set-env-vars "FIREBASE_API_KEY=$FIREBASE_API_KEY" \

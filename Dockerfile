@@ -1,5 +1,5 @@
 # ─── Stage 1: Build Frontend ───────────────────────────────────────────────
-FROM node:20-alpine AS frontend-builder
+FROM --platform=linux/amd64 node:20-alpine AS frontend-builder
 
 WORKDIR /app/frontend
 
@@ -30,7 +30,7 @@ ENV VITE_GOOGLE_MAPS_API_KEY=$VITE_GOOGLE_MAPS_API_KEY
 RUN npm run build
 
 # ─── Stage 2: Build Backend ────────────────────────────────────────────────
-FROM node:20-alpine AS backend-builder
+FROM --platform=linux/amd64 node:20-alpine AS backend-builder
 
 WORKDIR /app/backend
 
@@ -41,7 +41,7 @@ COPY backend/ ./
 RUN npm run build
 
 # ─── Stage 3: Production Image ─────────────────────────────────────────────
-FROM node:20-alpine AS production
+FROM --platform=linux/amd64 node:20-alpine AS production
 
 WORKDIR /app/backend
 
