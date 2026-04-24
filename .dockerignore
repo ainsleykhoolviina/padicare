@@ -1,0 +1,19 @@
+**/node_modules
+**/dist
+**/.env
+**/.env.local
+**/.env.production
+**/*.log
+.git
+.gitignore
+.vscode
+.idea
+README.md
+deploy.sh
+
+# Test files
+**/test-*.js
+**/test-*.ts
+
+# Do NOT exclude the service account JSON — the Dockerfile needs it for Vertex AI
+# If you switch to Workload Identity, add: backend/*.json

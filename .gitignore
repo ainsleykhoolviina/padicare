@@ -1,0 +1,40 @@
+# Dependencies
+**/node_modules/
+
+# Build output
+**/dist/
+
+# Environment variables — NEVER commit these
+**/.env
+**/.env.local
+**/.env.production
+**/.env.deploy
+
+# Google Cloud service account keys — NEVER commit these
+backend/*.json
+!backend/package.json
+!backend/package-lock.json
+!backend/tsconfig.json
+
+# Logs
+**/*.log
+**/logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Docker
+Dockerfile.dev
+
+# Test files
+**/test-*.js
+**/test-*.ts
+
+# Lock files are kept for reproducible builds
+# but package-lock.json is large — uncomment below if you prefer not to track it
+# **/package-lock.json
