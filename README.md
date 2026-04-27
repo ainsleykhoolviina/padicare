@@ -102,4 +102,5 @@ service cloud.firestore {
 5. Copy your Firebase config values into `frontend/.env`
 
 ## TechStack
+
 React 18, TypeScript, Vite, Tailwind CSS, shadcn/ui, Leaflet, Firebase Auth, Web Speech API; Express, Firebase Admin, Pino, Zod; Vertex AI & Gemini (multimodal detection, chatbot, planning, insights); Docker, Google Cloud Run, Firestore
