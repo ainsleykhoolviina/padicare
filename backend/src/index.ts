@@ -1,4 +1,4 @@
-﻿// Must be first — load env before any other imports
+﻿// Must be first, load env before any other imports
 import dotenv from "dotenv";
 import path from "path";
 dotenv.config({ path: path.resolve(process.cwd(), ".env") });
