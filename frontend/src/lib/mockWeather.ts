@@ -14,8 +14,6 @@ export function generateMockWeather(latitude?: number | null, longitude?: number
   };
 }
 
-// random function
-
 export function weatherWarnings(weather: MockWeather) {
   const warnings = [];
   if (weather.humidity >= 85) {
